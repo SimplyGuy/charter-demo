@@ -2,7 +2,6 @@ package com.example.charterproject.service;
 
 import com.example.charterproject.model.Transaction;
 import com.example.charterproject.model.User;
-import com.example.charterproject.repository.TransactionRepository;
 import com.example.charterproject.repository.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -20,9 +19,6 @@ public class UserServiceTest {
 
     @MockBean
     private UserRepository userRepo;
-
-    @MockBean
-    private TransactionRepository transactionRepo;
 
     @Autowired
     private UserService userService;

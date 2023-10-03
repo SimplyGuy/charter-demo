@@ -3,7 +3,6 @@ package com.example.charterproject.controller;
 import com.example.charterproject.model.Transaction;
 import com.example.charterproject.model.User;
 import com.example.charterproject.service.TransactionService;
-import com.example.charterproject.service.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -16,7 +15,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import java.util.*;
 
 import static org.mockito.Mockito.*;
-import static org.hamcrest.Matchers.is;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
@@ -28,9 +26,6 @@ public class TransactionControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
-
-    @Autowired
-    private ObjectMapper objectMapper;
 
     private User testUser;
     private Transaction testTransaction1;

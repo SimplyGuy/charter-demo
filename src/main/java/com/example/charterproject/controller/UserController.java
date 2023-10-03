@@ -30,6 +30,7 @@ public class UserController {
         User user = userService.findUserById(userId);
         return new ResponseEntity<>(user, HttpStatus.OK);
     }
+
     @GetMapping("/users/rewardPoint/{userId}")
     public ResponseEntity<Integer> findUserTotalRewardPoint(@PathVariable("userId") long userId) {
         User user = userService.findUserById(userId);
